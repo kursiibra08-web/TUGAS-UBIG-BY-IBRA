@@ -1,0 +1,37 @@
+[
+    {
+        "judul": "I-LOVE-FOX",
+        "kategori": "CSS",
+        "gambar": "img/proyek-profil.png",
+        "alt": "Tangkapan layar halaman profil",
+        "deskripsi": "Web tentang rubah"
+    },
+    {
+        "judul": "e-j-hardcore",
+        "kategori": "CSS",
+        "gambar": "img/proyek-kontak.png",
+        "alt": "Tangkapan layar form kontak",
+        "deskripsi": "web tentang electronic japanese hardcore"
+    },
+    {
+        "judul": "Portofolio Responsif",
+        "kategori": "CSS",
+        "gambar": "img/proyek-responsif.png",
+        "alt": "Tangkapan layar portofolio responsif",
+        "deskripsi": "Rapi di ponsel, tablet, dan laptop dengan Flexbox."
+    },
+    {
+        "judul": "Kalkulator Nilai Rapor",
+        "kategori": "JavaScript",
+        "gambar": "img/proyek-kalkulator.png",
+        "alt": "Tangkapan layar kalkulator nilai",
+        "deskripsi": "Rata-rata dan predikat nilai dengan fungsi JavaScript."
+    },
+    {
+        "judul": "Lima Soal Logika",
+        "kategori": "JavaScript",
+        "gambar": "img/proyek-logika.png",
+        "alt": "Tangkapan layar soal logika",
+        "deskripsi": "Lima fungsi logika yang masing-masing diuji 3 masukan."
+    }
+]
