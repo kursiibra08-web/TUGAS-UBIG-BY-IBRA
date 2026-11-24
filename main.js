@@ -4,35 +4,40 @@ const proyek = [
         kategori: "CSS", 
         gambar: "img/proyek-profil.png", 
         alt: "Tangkapan layar halaman profil", 
-        deskripsi: "Web tentang rubah"
+        deskripsi: "Web tentang rubah",
+        github: "https://github.com/kursiibra08-web/I-LOVE-FOX"
     },
     {
         judul: "e-j-hardcore", 
         kategori: "CSS",
         gambar: "img/proyek-kontak.png", 
         alt: "Tangkapan layar form kontak", 
-        deskripsi: "web tentang electronic japanese hardcore"
+        deskripsi: "web tentang electronic japanese hardcore",
+        github: "https://github.com/kursiibra08-web/e-j-hardcore"
     },
     {
         judul: "Portofolio Responsif", 
         kategori: "CSS", 
         gambar: "img/proyek-responsif.png", 
         alt: "Tangkapan layar portofolio responsif", 
-        deskripsi: "Rapi di ponsel, tablet, dan laptop dengan Flexbox."
+        deskripsi: "Rapi di ponsel, tablet, dan laptop dengan Flexbox.",
+        github: "https://github.com/kursiibra08-web/profile_card"
     },
     {
         judul: "Kalkulator Nilai Rapor", 
         kategori: "JavaScript", 
         gambar: "img/proyek-kalkulator.png", 
         alt: "Tangkapan layar kalkulator nilai", 
-        deskripsi: "Rata-rata dan predikat nilai dengan fungsi JavaScript."
+        deskripsi: "Rata-rata dan predikat nilai dengan fungsi JavaScript.",
+        github: "https://github.com/kursiibra08-web/TUGAS-UBIG-BY-IBRA/blob/main/latihan.js"
     },
     {
         judul: "Lima Soal Logika", 
         kategori: "JavaScript", 
         gambar: "img/proyek-logika.png", 
         alt: "Tangkapan layar soal logika", 
-        deskripsi: "Lima fungsi logika yang masing-masing diuji 3 masukan."
+        deskripsi: "Lima fungsi logika yang masing-masing diuji 3 masukan.",
+        github: "https://github.com/kursiibra08-web/TUGAS-UBIG-BY-IBRA/blob/main/logika.js"
     }
 ];
 
@@ -40,12 +45,17 @@ const daftarProyek = document.querySelector("#daftar-proyek");
 const jumlahProyek = document.querySelector("#jumlah-proyek");
 
 function buatKartu(item) {
+    const tautanGithub = item.github
+        ? `<a class="project-label" href="${item.github}" target="_blank" rel="noopener noreferrer" style="display:block; margin-top:8px; color:var(--link-hover);">Lihat repo GitHub</a>`
+        : `<span class="project-label" style="display:block; margin-top:8px;">Repo GitHub: Not found</span>`;
+
     return `
     <article class="project-item">
         <span class="label">${item.kategori}</span>
         <h2 class="section-heading" style="margin-top: 8px;">${item.judul}</h2>
         <p class="bio-text" style="margin-bottom: 12px;">${item.deskripsi}</p>
         <span class="project-label" style="display:block; margin-bottom:8px;">File: ${item.gambar}</span>
+        ${tautanGithub}
     </article>`;
 }
 
